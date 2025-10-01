@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/core/theme/colors.dart';
+import 'package:myapp/core/theme/text_styles.dart';
 
 class HomePage4 extends StatelessWidget {
   const HomePage4({super.key});
@@ -6,8 +8,10 @@ class HomePage4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.backgroundColorScaffold,
       appBar: AppBar(
-        title: const Text("MEU APP"),
+        backgroundColor: AppColors.primary,
+         title: Text('Meu App', style: TextStyles.appBarTitle),
         centerTitle: false,
         // Ícones como na imagem
         leading: const Icon(Icons.account_circle),
@@ -37,7 +41,6 @@ class HomePage4 extends StatelessWidget {
           ),
         ),
       ),
-      backgroundColor: Colors.blueGrey[100],
     );
   }
 }

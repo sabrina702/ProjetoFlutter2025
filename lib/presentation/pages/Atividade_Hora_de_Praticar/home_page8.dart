@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/core/theme/colors.dart';
+import 'package:myapp/core/theme/text_styles.dart';
 
 class HomePage8 extends StatelessWidget {
   const HomePage8({super.key});
@@ -6,8 +8,10 @@ class HomePage8 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.backgroundColorScaffold,
       appBar: AppBar(
-        title: const Text("Home Page 8"),
+        backgroundColor: AppColors.primary,
+        title: Text('Meu App', style: TextStyles.appBarTitle),
       ),
       drawer: Drawer(
         child: ListView(

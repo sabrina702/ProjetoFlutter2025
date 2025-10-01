@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/core/theme/colors.dart';
+import 'package:myapp/core/theme/text_styles.dart';
 
 class HomePage3 extends StatelessWidget {
   const HomePage3({super.key});
@@ -6,8 +8,10 @@ class HomePage3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.backgroundColorScaffold,
       appBar: AppBar(
-        title: const Text("MEU APP"),
+        backgroundColor: AppColors.primary,
+        title: Text('Meu App', style: TextStyles.appBarTitle),
       ),
       body: Container(
         alignment: Alignment.center,
@@ -16,14 +20,10 @@ class HomePage3 extends StatelessWidget {
         margin: const EdgeInsets.all(100),
         decoration: BoxDecoration(
           color: Colors.purple,
-          border: Border.all(
-            color: Colors.green,
-            width: 2,
-          ),
+          border: Border.all(color: Colors.green, width: 2),
         ),
         child: const Text("Olá"),
       ),
-      backgroundColor: Colors.blueGrey[100],
     );
   }
 }

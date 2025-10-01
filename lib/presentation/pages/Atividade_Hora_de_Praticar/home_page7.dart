@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/core/theme/colors.dart';
+import 'package:myapp/core/theme/text_styles.dart';
 
 class HomePage7 extends StatefulWidget {
   const HomePage7({super.key});
@@ -48,8 +50,10 @@ class _HomePage7State extends State<HomePage7> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.backgroundColorScaffold,
       appBar: AppBar(
-        title: const Text("MEU APP"),
+      backgroundColor: AppColors.primary,
+      title: Text('Meu App', style: TextStyles.appBarTitle),
       ),
       body: Container(
         color: Colors.blueGrey[100],
