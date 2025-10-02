@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'presentation/pages/Atividade_Hora_de_Praticar/home_page2.dart';
+import 'presentation/pages/Atividade_Hora_de_Praticar2/home_page7.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomePage2(),
+      home: const HomePage7(),
     );
   }
 }
